@@ -8,10 +8,26 @@ header{
 	text-align:center;
 }
 
+h3{
+ margin-left:10px;	
+}
+
+p{
+	padding:0px 20px;
+}
+
 code{
 	display:block;
 	width:400px;	
 	background:#000;
 	color:#fff;
 	padding:10px 15px;
+}
+code p{
+	margin:0px;
+	padding:0px;
+}
+#wrapper{
+	width:430px;
+	margin:0 auto;
 }

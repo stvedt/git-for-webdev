@@ -7,46 +7,73 @@
 </head>
 
 <body>
-<header>
-	<h1>The Test Repos Center</h1>
-	<p>This is the home of all my non-sensical playing with Git</p>
-	<p>So far I love git!</p>
-</header>
-<h2>Useful Terminal Commands</h2>
-<code>
-<p>cd - Change Directory</p>
-<p>ls &lt;fileName&gt; - List Files</p>
-<p>rm &lt;fileName&gt; - remove file</p>
-<p>mc - move</p>
-<p>mkdir - Make Directory</p>
-<p>help - help</p>
-</code>
-<h2>Git Config Commands</h2>
-<code>
-<p>git config --global user.name "Your Name" <br>
-	git config --global user.email "your@email.com"</p>
-</code>
-<h3>Add some color</h3>
-<code>
-<p>git config --global color.diff auto<br>
-	git config --global color.status auto<br>
-  
-	git config --global color.branch auto </p>
-</code>
-<h3>Initialize Git (Locally)</h3>
-<p>Do a CD to the directory you want to start using Git for.</p>
-<code>
-<p>cd &lt;nameOfDir&gt;</p>
-<p>git init</p>
-</code>
-<h2>Creating Versions &amp; Committing</h2>
-<p>To create a version you must stage and commit the file(s)</p>
-<p>Step 1 - Stage<br>
-	Step 2 - Commit</p>
-<p>Note: If a file has been modified after being staged it must be restaged for the changes to be committed.</p>
-<p><code>git add &lt;file(s)&gt;<br>
-	git commit -m 'commit message here'
-	
-</code></p>
+<div id="wrapper">
+	<header>
+		<h1>The Test Repos Center</h1>
+		<p>This is the home of all my non-sensical playing with Git</p>
+		<p>So far I love git!</p>
+	</header>
+	<h2>Useful Terminal Commands</h2>
+	<code>
+	<p>cd - Change Directory</p>
+	<p>ls &lt;fileName&gt; - List Files</p>
+	<p>rm &lt;fileName&gt; - remove file</p>
+	<p>mc - move</p>
+	<p>mkdir - Make Directory</p>
+	<p>help - help</p>
+	</code>
+	<h2>Git Config Commands</h2>
+	<code>
+	<p>git config --global user.name "Your Name"</p>
+	<p>git config --global user.email "your@email.com"</p>
+	</code>
+	<h3>Add some color</h3>
+	<code>
+	<p>git config --global color.diff auto</p>
+	<p> git config --global color.status auto</p>
+	<p> git config --global color.branch auto </p>
+	</code>
+	<h3>Initialize Git (Locally)</h3>
+	<p>Do a CD to the directory you want to start using Git for.</p>
+	<code>
+	<p>cd &lt;nameOfDir&gt;</p>
+	<p>git init</p>
+	</code>
+	<h2>Creating Versions &amp; Committing</h2>
+	<h3>Create Version</h3>
+	<p>Step 1 - Stage<br>
+		Step 2 - Commit</p>
+	<p>Note: If a file has been modified after being staged it must be restaged for the changes to be committed.</p>
+	<code>git add &lt;file(s)&gt;<br>
+	git commit -m 'commit message here' </code>
+	<p>-m , commit message<br>
+	-a , add all, adds and commits all files</p>
+	<h3>Modifying staged files</h3>
+	<p>How to view the status, difference and remove from stage.</p>
+	<code>
+	<p>git status -s</p>
+	<p>git diff</p>
+	<p>git reset HEAD &lt;fileName&gt;</p>
+	</code>
+	<p>-s, displays a condensed (short) version of status</p>
+	<h3>Ammending a Commit</h3>
+	<code>
+	<p>git commit --amend -m 'optional overwrite of original message'</p>
+	</code>
+	<h2>More information/modification</h2>
+	<h3>Diplay Logs of Commits</h3>
+	<code>
+	<p>git log</p>
+	<p>git log -p -2</p>
+	<p>git log --stat</p>
+	</code>
+	<p>-p, includes the file diff's with logs<br>
+		-2, displays the two most recent logs (use any num)<br>
+		--stat, abbreviated version of logs </p>
+	<h3>Get a Clone of Git Repository</h3>
+	<code>
+	<p>git clone &lt;git@github.com:user/repoName.git&gt;</p>
+	</code>
+</div>
 </body>
 </html>

@@ -7,8 +7,46 @@
 </head>
 
 <body>
-<h1>The Test Repos Center</h1>
-<p>This is the home of all my non-sensical playing with Git</p>
-<p>So far I love git!</p>
+<header>
+	<h1>The Test Repos Center</h1>
+	<p>This is the home of all my non-sensical playing with Git</p>
+	<p>So far I love git!</p>
+</header>
+<h2>Useful Terminal Commands</h2>
+<code>
+<p>cd - Change Directory</p>
+<p>ls &lt;fileName&gt; - List Files</p>
+<p>rm &lt;fileName&gt; - remove file</p>
+<p>mc - move</p>
+<p>mkdir - Make Directory</p>
+<p>help - help</p>
+</code>
+<h2>Git Config Commands</h2>
+<code>
+<p>git config --global user.name "Your Name" <br>
+	git config --global user.email "your@email.com"</p>
+</code>
+<h3>Add some color</h3>
+<code>
+<p>git config --global color.diff auto<br>
+	git config --global color.status auto<br>
+  
+	git config --global color.branch auto </p>
+</code>
+<h3>Initialize Git (Locally)</h3>
+<p>Do a CD to the directory you want to start using Git for.</p>
+<code>
+<p>cd &lt;nameOfDir&gt;</p>
+<p>git init</p>
+</code>
+<h2>Creating Versions &amp; Committing</h2>
+<p>To create a version you must stage and commit the file(s)</p>
+<p>Step 1 - Stage<br>
+	Step 2 - Commit</p>
+<p>Note: If a file has been modified after being staged it must be restaged for the changes to be committed.</p>
+<p><code>git add &lt;file(s)&gt;<br>
+	git commit -m 'commit message here'
+	
+</code></p>
 </body>
 </html>
